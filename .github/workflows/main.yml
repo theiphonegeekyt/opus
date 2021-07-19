@@ -1,14 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: TIGDows
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
-    branches: [ develop-1.8 ]
+    branches: [ TIGDows Beta OS ]
   pull_request:
-    branches: [ develop-1.8 ]
+    branches: [ TIGDows Beta OS ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,7 +30,7 @@ jobs:
     - name: Commit version file
       uses: alexesprit/action-update-file@main
       with:
-        branch: 'develop-1.8'
+        branch: 'TIGDows Beta OS'
         file-path: .opus_version
         commit-msg: Update version date
         github-token: ${{ secrets.GITHUB_TOKEN }}
